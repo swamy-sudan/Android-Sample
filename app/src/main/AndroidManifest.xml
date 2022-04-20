@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.razorpay.sampleapp"
+    android:versionCode="25"
+    android:versionName="3.5"
+    >
+
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="Razorpay Sample App"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".java.PaymentActivity"
+            android:label="Razorpay Sample App"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".kotlin.PaymentActivity">
+
+        </activity>
+
+        <!-- Add your API key here -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_m5iIKFxOvh5PKG"
+            />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+    </application>
+</manifest>
